@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Bách Khoa - Hệ Thống Quản Lý Thư Viện</title>
+    <link rel="icon" type="image/jpeg" href="public/logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700;800;900&family=Montserrat:wght@700;800;900&family=Raleway:wght@700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-square">BK</div>
+                </div>
+                <nav class="nav">
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home">Trang Chủ</a></li>
+                        <li><a href="#features">Tính Năng</a></li>
+                        <li><a href="#about">Về Chúng Tôi</a></li>
+                        <li><a href="#contact">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Thư Viện Bách Khoa</h1>
+            <p class="hero-subtitle">GIẢI PHÁP THƯ VIỆN SỐ CHO SINH VIÊN</p>
+        </div>
+        <div class="hero-carousel">
+            <div class="carousel-slide active">
+                <div class="hero-images">
+                    <div class="hero-image-box glass-card">
+                        <div class="image-label">SÁCH MỚI</div>
+                        <img src="public/sachmoi.jpg" alt="Sách mới" class="hero-image-placeholder">
+                    </div>
+                    <div class="hero-image-box glass-card">
+                        <div class="image-label">KHÔNG GIAN ĐỌC</div>
+                        <img src="public/Khonggiandoc.jpg" alt="Không gian đọc" class="hero-image-placeholder">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="hero-images">
+                    <div class="hero-image-box glass-card">
+                        <div class="image-label">TÀI LIỆU SỐ</div>
+                        <img src="public/tailieuso.png" alt="Tài liệu số" class="hero-image-placeholder">
+                    </div>
+                    <div class="hero-image-box glass-card">
+                        <div class="image-label">KHÔNG GIAN HỌC TẬP</div>
+                        <img src="public/Phong-da-chuc-nang_OISP_02.jpg" alt="Không gian học tập"
+                            class="hero-image-placeholder">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h3>Tìm Kiếm Thông Minh</h3>
+                            <p>Tìm kiếm sách, tài liệu theo tên, tác giả, chủ đề, ISBN và nhiều tiêu chí khác một cách
+                                nhanh chóng và chính xác.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h3>Mượn Trả Trực Tuyến</h3>
+                            <p>Đặt chỗ và quản lý việc mượn trả sách trực tuyến, theo dõi lịch hạn trả và gia hạn sách
+                                dễ dàng.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h3>Truy Cập Tài Liệu Số</h3>
+                            <p>Truy cập và tải xuống tài liệu số, sách điện tử, bài báo khoa học và tài nguyên học tập
+                                24/7.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-text">
+                            <h3>Thông Báo Tự Động</h3>
+                            <p>Nhận thông báo về sách mới, sách đã đặt có sẵn, nhắc nhở hạn trả và các thông tin quan
+                                trọng khác.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-image">
+                    <div class="app-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-search-bar">
+                                <span>🔍</span>
+                                <span>Tìm kiếm sách...</span>
+                            </div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-book-item">
+                                <img src="public/giaitich1.jpg" alt="Giải tích 1" class="book-cover">
+                                <div class="book-info">
+                                    <h4>Giải tích 1</h4>
+                                    <p>Tác giả: Nguyễn Đình Huy (Chủ biên)</p>
+                                    <span class="book-status available">Có sẵn</span>
+                                </div>
+                            </div>
+                            <div class="mockup-book-item">
+                                <img src="public/dstt.jpg" alt="Đại Số Tuyến Tính" class="book-cover">
+                                <div class="book-info">
+                                    <h4>Đại Số Tuyến Tính</h4>
+                                    <p>Tác giả: Đặng Văn Vinh</p>
+                                    <span class="book-status available">Có sẵn</span>
+                                </div>
+                            </div>
+                            <div class="mockup-book-item">
+                                <img src="public/ktlt.jpg" alt="Kỹ Thuật Lập Trình" class="book-cover">
+                                <div class="book-info">
+                                    <h4>Kỹ Thuật Lập Trình</h4>
+                                    <p>Tác giả: TS. Nguyễn Duy Nhật Viễn (Chủ biên)</p>
+                                    <span class="book-status reserved">Đã đặt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Vì Sao Chọn Thư Viện Bách Khoa?</h2>
+            <p class="section-subtitle">LỢI ÍCH CHO SINH VIÊN ĐẠI HỌC BÁCH KHOA</p>
+            <div class="why-choose-content">
+                <div class="why-choose-list">
+                    <div class="benefit-item">
+                        <h3>Tiết Kiệm Thời Gian</h3>
+                        <p>Tìm kiếm và đặt chỗ sách trực tuyến, không cần đến thư viện để kiểm tra tình trạng sách.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Tài Nguyên Phong Phú</h3>
+                        <p>Hàng nghìn đầu sách, tài liệu nghiên cứu, luận văn và tài nguyên số đa dạng.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Tiện Lợi 24/7</h3>
+                        <p>Truy cập hệ thống mọi lúc mọi nơi, quản lý tài khoản và tài liệu của bạn bất cứ khi nào.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Hệ Thống An Toàn</h3>
+                        <p>Bảo mật thông tin cá nhân và lịch sử mượn trả, đảm bảo quyền riêng tư của người dùng.</p>
+                    </div>
+                    <a href="#contact" class="cta-button">TÌM HIỂU THÊM</a>
+                </div>
+                <div class="why-choose-image">
+                    <img src="public/o5bhrKSLbn1AHFr5j7mgpVEI.jpg" alt="Sinh viên Bách Khoa" class="university-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title script-title">Sinh Viên Nói Gì?</h2>
+            <div class="rating-section">
+                <div class="rating-score">4.8</div>
+                <div class="rating-chart">
+                    <div class="rating-bar">
+                        <span>5 sao</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4 sao</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 12%"></div>
+                        </div>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3 sao</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 2%"></div>
+                        </div>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2 sao</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 1%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Hệ thống tìm kiếm rất tiện lợi, tôi có thể tìm được sách cần thiết chỉ trong vài giây!"</p>
+                    <span class="testimonial-time">5 giờ trước</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Giao diện đẹp và dễ sử dụng, thông báo nhắc nhở rất hữu ích."</p>
+                    <span class="testimonial-time">6 giờ trước</span>
+                </div>
+                <div class="testimonial-card featured">
+                    <p>"Thư viện Bách Khoa đã giúp tôi tiết kiệm rất nhiều thời gian trong việc tìm tài liệu học tập. Hệ
+                        thống mượn trả trực tuyến rất tiện lợi và nhanh chóng."</p>
+                    <div class="testimonial-author">
+                        <img src="public/avata.jpg" alt="Nguyễn Văn An" class="author-avatar">
+                        <div class="author-info">
+                            <strong>Nguyễn Văn An</strong>
+                            <span>Sinh viên năm 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Cách Thức Hoạt Động</h2>
+            <p class="section-subtitle">CHỈ VỚI 3 BƯỚC ĐƠN GIẢN</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Đăng Nhập</h3>
+                    <p>Đăng nhập bằng tài khoản sinh viên của bạn để truy cập hệ thống thư viện.</p>
+                </div>
+                <div class="step-card highlighted">
+                    <div class="step-number">2</div>
+                    <h3>Tìm Kiếm & Đặt Chỗ</h3>
+                    <p>Tìm kiếm sách bạn cần và đặt chỗ mượn trực tuyến. Hệ thống sẽ thông báo khi sách có sẵn.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Mượn & Trả Sách</h3>
+                    <p>Đến thư viện để nhận sách đã đặt hoặc trả sách đã mượn. Theo dõi lịch hạn trả trên ứng dụng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-background">
+            <div class="university-building-bg"></div>
+        </div>
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
+                <p class="section-subtitle">BẠN CÓ GÓP Ý HOẶC CẦN HỖ TRỢ?</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Họ và tên" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Tin nhắn" rows="5" required></textarea>
+                    <button type="submit" class="submit-button">GỬI ĐI</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section class="app-screenshots">
+        <div class="container">
+            <h2 class="section-title">Khám Phá Ứng Dụng</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <div class="phone-mockup">
+                        <img src="public/3D Render - iphone - home.png" alt="Màn hình Home" class="screenshot-image">
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="phone-mockup">
+                        <img src="public/3D Render - iphone - phong hop.png" alt="Màn hình Phòng Họp"
+                            class="screenshot-image">
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="phone-mockup">
+                        <img src="public/3D Render - iphone - search result.png" alt="Màn hình Kết Quả Tìm Kiếm"
+                            class="screenshot-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Sẵn Sàng Tham Gia Cộng Đồng?</h2>
+                    <p class="newsletter-subtitle">TẢI ỨNG DỤNG NGAY TRÊN IOS VÀ ANDROID</p>
+                </div>
+                <div class="newsletter-form-wrapper">
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Nhập E-mail của bạn để nhận thông báo" required>
+                        <button type="submit" class="newsletter-button">GỬI CHO TÔI THÔNG BÁO</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-square">BK</div>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">in</a>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#about">Về Chúng Tôi</a>
+                    <a href="#features">Tính Năng</a>
+                    <a href="#testimonials">Đánh Giá</a>
+                    <a href="#contact">Liên Hệ</a>
+                </nav>
+                <div class="footer-bottom">
+                    <p class="copyright">© 2024 Thư Viện Bách Khoa. All rights reserved.</p>
+                    <p class="template-credit">Template by BK Library</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
